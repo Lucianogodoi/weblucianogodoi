@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Contenedor de texto */
+.content {
+    margin-left: 40px;
+    max-width: 600px;
+}
+
+/* Nombre grande */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* "Un poco sobre mí" en negrita */
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Texto descriptivo justificado */
+.about {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Secciones */
+.sections {
+    width: 800px;
+    margin-top: 40px;
+}
+
+.section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 16px;
+    color: #0073b1;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: #005582;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .about {
+        text-align: left;
+    }
+
+    .sections {
+        width: 100%;
+    }
+}
